@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator Antenna Bearing</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <header class="main-header">
+    <div class="primary-overlay">
+      <div class="navbar">
+        <nav class="transparent">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="logo"><span style="color: gold;">C</span>alculator <span style="color: gold;">A</span>ntenna <span style="color: gold;">B</span>earing</a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Side nav -->
+      <ul class="side-nav" id="mobile-nav">
+        <h4 class="blue-grey darken-3 center"><span style="color: gold;">C</span>alculator <span style="color: gold;">A</span>ntenna <span style="color: gold;">B</span>earing</h4>
+        
+      </ul>
+      <!-- Showcase -->
+      <div class="showcase container">
+        <div class="row">
+          <div class="col s12 main-text">
+            <h5>You found the...</h5>
+            <h1><span style="color: gold;">C</span>alculator <span style="color: gold;">A</span>ntenna <span style="color: gold;">B</span>earing</h1>
+            <p class="flow-text">Using a Web Calculator to accurately determine antenna bearings and range to geosynchronous satellites</p>
+              <br />
+              
+              <a href="" class="white-text"><i class="material-icons medium scroll-icon">
+                arrow_drop_down_circle</i></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+  
+  <!-- Section: Contact -->
+  <section id="contact" class="section section-contact center scrollspy">
+    <div id="googlemap"><div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52844.42639975265!2d121.04053005850675!3d14.61516490320907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70e3e03cbe9%3A0x56a5e07b59ea8de8!2sQuezon%20Memorial%20Circle!5e1!3m2!1sen!2sph!4v1568574882756!5m2!1sen!2sph" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <a href="https://www.bitgeeks.net/embed-google-map/">how to embed location on google map</a></div>
+      <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}.gmap_canvas 
+      {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+    <div class="container">
+      <div class="row">
+         <div class="col s12 m8 offset-m4 ">
+      <div class="card-panel z-depth-4 blue-grey darken-4 white-text">
+        <h4 class="cal"><span style="color: gold">C</span>ALCULATE <span style="color: gold">H</span>ERE</h4>
+        <div class="input-field">
+            <FORM>
+
+                <TABLE>  
+                
+                <TR>         
+                  <TD><B>EARTH STATION NORTH LATITUDE:</B></TD>
+                  <TD><INPUT TYPE=TEXT SIZE=8 name="l">degrees</TD> 
+                </TR>  
+                
+                <TR>        
+                  <TD><B>EARTH STATION WEST LONGITUDE:</B></TD>          
+                  <TD><INPUT TYPE=TEXT SIZE=8 name="n"> degrees</TD> 
+                </TR> 
+                
+                <TR>         
+                  <TD><B>SATELLITE WEST LONGITUDE:</B></TD>          
+                  <TD><INPUT TYPE=TEXT SIZE=8 name="s"> degrees</TD> 
+                </TR>  
+                
+                <TR>         
+                  <TD  class="center"><INPUT style="padding: 10px; border-radius: 7px; color:black;" TYPE="reset" value="RESET" ></TD>     
+                  <TD  class="center"><INPUT style="padding: 10px; border-radius: 7px; color:black;" TYPE=button VALUE="CALCULATE"
+                  onclick='calc(this.form,this.form.l.value,this.form.n.value,this.form.s.value)'></TD> 
+                </TR> 
+                
+                <TR>         
+                  <TD >         
+                  <B>AZIMUTH:</B></TD>
+                        <TD><INPUT TYPE=TEXT SIZE=6 name="elevation"> degrees</TD> 
+                </TR> 
+                
+                <TR>         
+                  <TD >         
+                  <B>ELEVATION:</B></TD>
+                        <TD><INPUT TYPE=TEXT SIZE=6 name="elevation"> degrees</TD> 
+                </TR> 
+                
+                </TABLE> 
+                </FORM>
+          </div> 
+        </div> 
+      </div>      
+    </div>
+  </section>
+  <!-- azimuth -->
+     
+  <!-- Footer -->
+    <footer class="page-footer blue-grey darken-1">
+      
+      <div class="footer-copyright blue-grey darken-4">
+      <div class="container"> <span style="color: gold;">C</span>alculator <span style="color: gold;">A</span>ntenna <span style="color: gold;">B</span>earing &copy; 2019</div>
+      <a href="" class="grey-text text-lighten-4 right"><i class="material-icons left">keyboard_arrow_up</i>Back to top</a>
+    </div>
+  </div>
+    </footer>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVHbxQg9lau-Rtiqeh3uxqoYdJMORh0N0"></script> -->
+  <script>
+    $(document).ready(function () {
+      // Init Sidenav
+      $(".button-collapse").sideNav();
+
+      //Init scrollspy
+      $('.scrollspy').scrollSpy();
+    
+      // Scrollfire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback:
+          function(el) {
+            Materialize.fadeInImage($(el))
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function() {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('grey darken-2');
+          }
+        }
+      ];
+        Materialize.scrollFire(options);
+
+        //Google Map Init
+        const position = [14.573480, 121.062477];
+        const centerPosition = [14.573480, 121.062477];
+
+        function showGoogleMaps() {
+          // Map positions
+          const latLng = new google.maps.Latlng(position[0], position[1]);
+          const centerLatlng = new google.maps.Latlng(centerPosition[0], centerPosition[1]);
+        
+        
+        // Map option
+          const mapOption = {
+            zoom: 12,
+            streetViewControl: false,
+            scaleControl: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: centerLatlng
+          }
+            // create map
+          map = new google.maps.Map(document.getElementById('googlemap'), mapOption);
+
+          // show Marker
+          marker = new google.maps.marker({
+            position: latLng,
+            map: map,
+            draggable: false,
+            animation: google.maps.Animation.DROP
+          });
+        }
+
+          // Map event
+          // google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+        
+
+
+        //azimuth
+        
+          });
+
+          function calc(form, l, n, s) {  	// Function parameter names correspond to table variables
+
+// VARIABLES USED IN CALCULATIONS                
+
+		var azi;         
+		var ele;         
+		var g = (s - n);  
+
+// CONVERSIONS TO RADIANS???       
+
+		var grad = (g / 57.29578);         
+		var lrad = (l / 57.29578); 
+		// var nrad = (n / 57.29578); 
+		// var srad = (s / 57.29578); 
+
+// AZIMUTH CALCULATIONS                  
+
+		azi = (3.14159 -         
+		(-Math.atan((Math.tan(grad)/Math.sin(lrad)))));         
+		
+		form.azimuth.value = azi * 57.29578;          
+
+// ELEVATION CALCULATIONS          
+		a = Math.cos(grad);         
+		b = Math.cos(lrad);          
+		ele = Math.atan((a * b -.1512)/(Math.sqrt(1 - (a*a) * (b*b))));         
+		
+		form.elevation.value = ele * 57.29578; 
+          }
+        </script>
+        </body>
+  </html>
